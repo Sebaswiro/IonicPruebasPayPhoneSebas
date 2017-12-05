@@ -1,0 +1,8 @@
+{
+  "name": "my-reddit",
+  "app_id": "2786dee7",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
