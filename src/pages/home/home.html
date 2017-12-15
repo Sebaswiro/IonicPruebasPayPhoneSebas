@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Cursos Ionic PayPhone
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+	<ion-list>
+	  <button ion-item *ngFor="let note of notes" >
+	    
+	  <ion-thumbnail item-start>
+      	<img src={{note.imagen}}>
+      </ion-thumbnail>
+    <h2>{{ note.title }}</h2>
+    <p>${{ note.valor }}</p>
+    <button ion-button clear item-end (click)="goToDetail(note.valor)">Comprar</button>
+	  </button>  
+	</ion-list>
 </ion-content>
